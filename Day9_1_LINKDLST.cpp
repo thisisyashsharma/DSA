@@ -60,6 +60,27 @@ void deletion(Node *head , int key){
 
 }
 
+Node* reverse(Node *head ){
+    Node *cur = head;
+    Node *nex = head->next;
+    Node *pre = NULL;
+    while(cur){
+     nex->next = cur;
+     cur->next = pre;
+
+     pre = cur;
+     cur = nex;
+    }
+    head=pre;
+
+
+
+}
+
+
+
+
+
 int main(){
     Node *head = new Node(1);
     head->next = new Node(2);
