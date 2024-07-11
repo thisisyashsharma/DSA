@@ -1,4 +1,4 @@
-//Date 03 JULY 2024
+//03 JULY 2024
 
 
 #include <iostream>
@@ -130,7 +130,7 @@ int main() {
 
 
       head->next->next->next->next = nullptr; //breaking the loop to display linked list
-      
+
     display(head);
     
 
